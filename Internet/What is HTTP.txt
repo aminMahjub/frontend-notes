@@ -1,0 +1,73 @@
+What is the Http ? 
+
+-Simple resource (https://www.w3schools.com/whatis/whatis_http.asp)
+difficult resource (https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview)
+persian doc (https://www.arvancloud.com/help/fa/article/4403979991442-%D9%BE%D8%B1%D9%88%D8%AA%DA%A9%D9%84-TCP-%DA%86%DB%8C%D8%B3%D8%AA%D8%9F)
+Vido (https://www.youtube.com/watch?v=SzSXHv8RKdM)
+
+
+W3Schools note :
+
+-HTTP stands for Hyper Text Transfer Protocol
+
+-WWW is about communication between web clients and servers 
+
+-Comminicatio between client and web is available when Http request send and http respone recieve
+
+
+Cloud Flare :
+
+-http request carries some data like : 1_Http type 2_a Url 3_an Http method 4_Http request header
+5_optional http body
+
+-Http method examples: POST, Get, Delete
+
+-http header included text inforamtion stored in ket-values pairs, these values are core information
+for instance : https://www.cloudflare.com/img/learning/ddos/glossary/hypertext-transfer-protocol-http/http-request-headers.png
+
+
+-http body is the body of the requested data from clients for example : username and password
+
+-http respone is what web clients asked from web server to send data in the other hand http respone 
+is the http request answer http respone contains : 1_http status code 2_http respone body 3_optional Http body
+
+-http status code are 3-didgits code to indicated http request status and it brokes into the 5 following blocks : 
+
+1_1xx informtional
+2_2xx succes
+3_3xx redirection
+4_4xx client error
+5_5xx server error
+
+'xx' refers to diffrent number between 00 and 99
+
+for instance : 
+if respone status code starts with 2 means it is Ok for example '200 OK'
+if respone status code begins with 4 or 5 means there was erro in client side or server side for example (404 NOT FOUND it means there was error in )
+
+-Successful HTTP responses to ‘GET’ requests generally have a body which contains the requested information. In most web requests, this is HTML data which a web browser will translate into a web page
+
+
+TCP :
+
+-doc link (https://www.cloudflare.com/learning/ddos/glossary/tcp-ip/)
+
+-IP does not handle pcaket ordering or error checking 
+
+-TCP is similiar to send message written on puzzle through the mail
+
+- when you want to send message to someone your message broken in puzzle and then travel with postal routers
+
+-The TCP protocol can be thought of as the puzzle assembler on the other side who puts the pieces together in the right order
+
+-great example for how TCP works : 
+imagine you want to send email to your friend with gmail, TCP broken your email message into the numbered pieces and then give it to IP then IP sends these pieces to the distance,TCP must get pices pg email and then ordered in the right way 
+nad make sure all numbered pices arrive
+
+-UPD and TPC are same, expect TPC order the packets in right way but in UPD, there is no guarantee to put the ordered packets in right way
+if some packets lost, TPC must to search about missing packets but UPD isn't seatching for it
+
+-generally we suggest to use UPD when data transmission speed's priority is more important than accuracy of sending data
+
+
+ 

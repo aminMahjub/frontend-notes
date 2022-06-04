@@ -1,0 +1,49 @@
+How does the internet works ??
+
+-internet is network of computers comminicate all together!
+
+-it began in 1960s as a us-army-funded project and in 1980s it evolved into public instucture and supported by
+many universities and priavate companies
+
+-video (
+https://www.youtube.com/watch?v=7_LPdttKXPc
+https://www.youtube.com/watch?v=x3c1ih2NJEg
+)
+
+-each computer on a network connected to special tiny computer called router
+
+-to make sure message from computer A send and make sure computer B receive that message
+ is router job
+
+-we can connect router to another router to able scale infitely 
+
+-if we want comminicate with our freind in America we should connect out network to telephone instructure 
+So, modems do it for us 
+
+-modems turn information from our netwrok to data that are managable by out telephone instructure and vice versa
+
+-Next step is to send message from our netwoek to another network we want to reach, 
+So, we connect our network to Internet Services Provider(ISP)
+
+-ISP is company that manage some special routers and linked together
+and can also accses to another ISP's routers
+
+-each compuiters find them by IP address and we use domain cause it is easy to remmeber it
+
+-Intranets are private networks that are restricted to members of a particular organization
+
+-Extranets are similare to intranates expect it is open all or part of the rganization to sharing docs, collabration with other orginization
+
+-Extrans used to safetly and securly for clients and empoleyee of orignazation
+
+-Persian resource for Exrtanets and Intranets (https://respina.net/blog/extranet-vs-intranet/)
+
+
+
+Video Notes : 
+
+- Our computers aren't Server beacuase there are not connected directly to internet(connected to ISPs and then internet)
+
+ 
+
+ 
