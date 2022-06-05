@@ -1,0 +1,52 @@
+How does browsers work ? 
+
+MDN doc (https://developer.mozilla.org/en-US/docs/Web/Performance/How_browsers_work)
+Complete doc (https://www.html5rocks.com/en/tutorials/internals/howbrowserswork/)
+Vido (https://www.youtube.com/watch?v=WjDrMKZWCt0)
+
+MDN doc :
+
+-Network lantency is the time it takes to transimt bytes over-the-air to computer
+
+-Web performance is what we have to do to page load happen as quickly as possible
+
+-Navigation is the first step of loading web page it occures whenever we send request by 
+entering link into url box, clicking link, senging form data
+
+one of the web performance goal is minize the time navigation takes to computers 
+this does'nt takes too long, nut letancy and bandwidth can cuase delays
+
+-the first step of navigation is DNS lookup when you searching website you send request to DNS and DNS send back the 
+IP address as domain name 
+
+we read about DNS and how it works in next chapter
+
+-TTFB(time to first byte) is the time that user send request to server and the receipt of this
+first packet of html, the first chunk of the contetn is usually 14KB of data
+
+-the first respone pocket will be 14Kb and this is part of the TCP slow start, the alghoritm balances as speed connection of network
+slow start incresees size of the amount data transmitted until the newtwork's max bandwidth can be determined
+
+TPC slow start, after sending initial pocket, doubles the size of the next pocket around 28KB
+
+-as the server send data in TPC pocket, clients confirm delivery data by acknowledgements,or ACKs
+the ocnnection limmited in capacity dependiing on hardware and network condition, if server sends too many pockets quickly, they will dropped,
+server registers this as missing ACKs, 
+
+So congestion control algorithm uses this flow to determine data rate between send pockets and ACKs
+
+-Once the chunk of data received, browser parsing it into the DOM and CSSOM and then show a page to screen
+
+even initila pocket size is larger than 14KB thw browser bgin parsing and attempting to render the data it has 
+so it's why important to web performance optimization to included everything browser needs to rendering
+
+HTM and Css need to render first 
+
+So before anything rendered to screen, the HTML and Css and JS hav to parsed
+
+-first step of process of the html is building DOM tree, html parsing involves into tokenization and DOM tree
+html token included start and end tags, attribute and name and values
+
+when the parser find non-blocking resource such as image, first it send request to resource and continue parsing
+the script tag without async or defer block process of parsin html
+ 

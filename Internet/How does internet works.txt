@@ -42,7 +42,7 @@ and can also accses to another ISP's routers
 
 Video Notes : 
 
-- Our computers aren't Server beacuase there are not connected directly to internet(connected to ISPs and then internet)
+- Our computers aren't Server beacuase these are not connected directly to internet(connected to ISPs and then internet)
 
  
 
