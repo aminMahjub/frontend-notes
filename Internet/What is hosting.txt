@@ -1,0 +1,25 @@
+What is hosting ?
+
+Video 1 (https://www.youtube.com/watch?v=htbY9-yggB0)
+Video 2 (https://www.youtube.com/watch?v=AXVZYzw8geg)
+Video 3 (https://www.youtube.com/watch?v=Kx_1NYYJS7Q)
+
+Video 1 : 
+
+-if you wanna create website you need to host it in the somewhere like house
+
+-type of hosting is :
+1-virtual private service (VPN)
+2_reseller hosting
+3-shared hosting
+
+shared hosting is famuos: 
+
+-for shared hosting you need server, server is big powerful computer to available
+you website for people
+
+-data center provides the newtwork and power connectivity
+
+-when you buy host for your website means you buy physical disk space and bandwidth in the server 
+
+-cPanel allows you to manage key areas of your hosting like managing domains or database
