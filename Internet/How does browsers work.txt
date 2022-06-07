@@ -37,7 +37,7 @@ So congestion control algorithm uses this flow to determine data rate between se
 
 -Once the chunk of data received, browser parsing it into the DOM and CSSOM and then show a page to screen
 
-even initila pocket size is larger than 14KB thw browser bgin parsing and attempting to render the data it has 
+even initial pocket size is larger than 14KB thw browser begin parsing and attempting to render the data it has 
 so it's why important to web performance optimization to included everything browser needs to rendering
 
 HTM and Css need to render first 
@@ -49,4 +49,42 @@ html token included start and end tags, attribute and name and values
 
 when the parser find non-blocking resource such as image, first it send request to resource and continue parsing
 the script tag without async or defer block process of parsin html
+
+-When parser is doing his work and parsing html, in the background preload scanner find link, image and script
+then download them, if we have absolute link preload scanner will send request to the main resoure
+
+-second step is creating CSSOM, CSSOM is simillar to DOM trees, means CSSOM is tree too
+the browser converts css rule to map of style for work and read them
+
+the browser goes through the set of css rule, creating a tree of css node and relations based on the css selectors
+
+the CSSOM includes style from user agent style sheet, the browser has a general style for web paegs
+
+-the total time to create the CSSOM is generally less than the time it takes for one DNS lookup.
+
+-while parser is parsing the css and creating CSSOM, another assets including javascript file and downloading it(thanks for preload scanner)
+javascript interepted,compiled, parser into abstract syntax tree and give it to interpreter
+
+-The browser also builds an accessibility tree that assistive devices use to parse and interpret content
+
+-Until the AOM is built, the content is not accessible to screen readers
+
+-the DOM and CSSOM trees created in the parsing steps combined into the rendering tree to computethe layout of every element
+then those element are painted to the screen
+
+-Tags that aren't going to be displayed, like the <head> and its children and any nodes with display: none, such as the script { display: none; } you will find in user agent stylesheets,
+ are not included in the render tree as they will not appear in the rendered output. Nodes with visibility: hidden applied are included in the render tree, as they do take up space.
+ As we have not given any directives to override the user agent default, the script node in our code example above will not be included in the render tree.  
  
+-layout is the process wich is all node's loaction, height and width are determined, aditional determination of each object's postion and size
+of the page
+
+-The last step in the critical rendering path is painting the individual nodes to the screen
+
+-the browser converts each box calculated in the layout phase to actual pixels on the screen.
+
+-Promoting content into layers on the GPU (instead of the main thread on the CPU) improves paint and repaint performance.
+
+-Time to Interactive (TTI) is the measurement of how long it took from that first request which led to the DNS lookup and SSL connection to when the page is interactive
+
+-When sections of the document are drawn in different layers, overlapping each other, compositing is necessary to ensure they are drawn to the screen in the right order and the content is rendered correctly. 

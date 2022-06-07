@@ -1,0 +1,15 @@
+-resource link : https://www.cloudflare.com/en-gb/learning/dns/what-is-dns/
+
+-DNS is domain name system, IP address goes through the intenet to the DNS lookup and then
+DNS translate doamin name to IP address 
+
+-DNS recursor is simillar to the bookman in bookshop, in the network knowladge, DNS recursor 
+take the IP address we want from DNS and then DNS recursor take it,
+
+-root nameserver is the first step of tranlation 
+
+-The top level domain server (TLD), it hosts the last portion of a hostname (In example.com, the TLD server is “com”).
+
+-Authoritative nameserver is the last step of translation and it is simillar to dictionary, it take IP address and then 
+give doamin name
+ 
