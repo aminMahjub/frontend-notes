@@ -1,0 +1,57 @@
+Window shortcut:
+
+1_ ctrl + f = go to search box 
+
+2_ alt + d = select url  
+
+3_ ctrl + w = close the programm 
+
+4_ alt + enter = show the propety of selected app
+
+5_ ctrl shift n = create folder
+
+6_ window + A = action navbar
+
+7_ window d = all programmer will minimize 
+
+8_ ctrl f = cmd search box 
+
+9_ ctrl end : end of screen 
+
+10_ ctrl home : scroll in the top of the screen
+
+11_ shift end = select all line after cursor
+
+12_ shift home = select all line before cursor
+
+13_ windows number = select app on the navbar and if you hit it again it will ne minimize
+
+14_ window b = select the left of the navbar 
+
+15_ ctrl tab = brows in every navbars 
+			
+16_ reverse of top point is : ctrl shift tab
+
+17_ windows m = minimize all app
+
+19_ window comma = hide the entire app
+
+20_ shift click app = you open another window of app
+
+21_window home : minimize all app, as app you clicked on it
+
+22_alt arrow : you can browse in the expolers 
+
+23_alt p : preview the file before open it
+
+24_ctrl n : open new window
+
+25_alt f4 : close all app
+
+26_ctrl w : close app you want
+
+27_window shift s : allow to optimize screen shots
+
+28_window i : open settings
+
+vidoe i use (https://www.youtube.com/watch?v=Wi921a6NASE)
