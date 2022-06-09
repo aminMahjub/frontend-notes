@@ -1,0 +1,70 @@
+Html basics important notes : 
+
+- there is several text formatting :  
+<b> - Bold text
+<strong> - Important text
+<i> - Italic text
+<em> - Emphasized text
+<mark> - Marked text
+<small> - Smaller text
+<del> - Deleted text
+<ins> - Inserted text
+<sub> - Subscript text
+<sup> - Superscript text
+
+- <b> just bold text without any importance
+- <strong> this element bold the text with strong importnace
+- <i> is used to alternative  voice and mood or you wanna write something from another 
+language, technical terms, but by definition, no longer required to use this element, you can use font-style in css instead of
+
+- <em> used for stressed emphasis compare to sourinding element 
+
+- diffrenet betweem <em>, <i> : 
+	resualt in web page is same but there is some diffrence in semantic meaning
+	<em> element represents strees emphasis of its content but <i> element used 
+	simple prose, such foregin word, fictional character or when one word refers
+	to the definition of word insted of representing its semantic meaning
+	for example 'just <em>do</em> it already' 'we <em>had</em> to do something'    
+	when someone reading this notes would prononuce the words in italic with italic 
+	emphasis, using verbal stress 
+
+	example of <i> we can reer to "The <i>Queen Mary</i> sailed last night" there is
+	no added emphasis or importance on the word "queen mary" another example is "The word
+	<i>the</i> is an article"
+
+	sometimes <em> indicate implict or explict contrast
+
+	for example : 
+	<p>
+  		In HTML 5, what was previously called
+  		<em>block-level</em> content is now called
+  		<em>flow</em> content.
+	</p>
+
+-<small> indicate side-comments or small print of page like copy right legal but also you can 
+ use fon-size with small or smaller value
+
+-<mark> used for represent mark or highlighted text for refrence or notaion purpose, 
+used in blockquote for intrast word or phrase, you can use <mark> for search resualt in web page
+
+mark is not announced by most screen readers in its defualt config and it can be announced 
+by content property with ::before and ::after pseudo-elements
+
+mark::before {
+  content: " [highlight start] ";
+}
+
+mark::after {
+  content: " [highlight end] ";
+}
+
+-<del> element show some word or phrase was deleted from doc, it has Accessibility concerns too like mark element, it has two attribute named cite and datatime
+
+-<ins> element shwo some word or phrase was added to doc, it has Accessibility concerns too like mark element, it has two attribute named cite and datatime
+
+-<sup> this element usually used for degree of numbers like '2 be tavan 2', this element should used for typography resons
+you can use vertical-align: super or give it percentage 
+
+-<sub> is like sup but it indicate value as subscript
+
+- read this after finish formattin and quotaion 'https://adrianroselli.com/2017/12/tweaking-text-level-styles.html'	

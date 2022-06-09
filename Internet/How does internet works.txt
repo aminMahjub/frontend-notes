@@ -17,7 +17,7 @@ https://www.youtube.com/watch?v=x3c1ih2NJEg
 
 -we can connect router to another router to able scale infitely 
 
--if we want comminicate with our freind in America we should connect out network to telephone instructure 
+-if we want comminicate with our freind in America we should connect our network to telephone instructure 
 So, modems do it for us 
 
 -modems turn information from our netwrok to data that are managable by out telephone instructure and vice versa
@@ -28,7 +28,7 @@ So, we connect our network to Internet Services Provider(ISP)
 -ISP is company that manage some special routers and linked together
 and can also accses to another ISP's routers
 
--each compuiters find them by IP address and we use domain cause it is easy to remmeber it
+-each compuiters find them by IP address and we use domain cause it is easy to remember it
 
 -Intranets are private networks that are restricted to members of a particular organization
 
