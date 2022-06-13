@@ -1,0 +1,33 @@
+<blockquote> : this element indicates the qoute text from somenone or some source 
+when you use this element it add space from left
+
+-you can use cite attr to mention the resource
+
+<q>: if you want to indicate shorter inline text o in the other word when you want to show 
+some text without paragraph break, use this element
+
+- Most modern browsers implant sournding qoutes for this element
+- use cite for this element too
+
+<abbr> : use for abbreviation word, optional attr is title for show the complete word 
+
+- if you want to add some defination to your abbreviation you can use <dfn> element for more defination 
+for example : 
+
+<p>A <dfn id="spec">Specification</dfn>
+(<abbr title="Specification">spec</abbr>) is a document that outlines
+in detail how a technology or API is intended to function and how it is
+accessed.</p>
+
+- it isn't neccessrty to use dnf or title attr
+
+<dfn> : when you want to defined something in text you can use this element and if the word you want to defined has 
+abbreviation you can use <abbr> in text, if you want to link the dfn you should use id and then 
+give it to <a> element
+
+<address> : you can use address elemetn for contact information of one people or one person 
+
+<cite> : The <cite> HTML element is used to describe a reference to a cited creative work
+it is not use for authors of creative work 
+
+<bdo> : change the direct of word with ltr or rtl 

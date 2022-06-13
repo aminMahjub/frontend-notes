@@ -1,0 +1,7 @@
+<style> : use for css style sheets 
+
+- if you add multiple style and link, they added to DOM by its order you write them
+
+<head> : in head element write machine readable information
+if you omitted head element html5 will create this automaticlly
+

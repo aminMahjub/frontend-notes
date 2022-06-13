@@ -28,7 +28,7 @@ language, technical terms, but by definition, no longer required to use this ele
 	when someone reading this notes would prononuce the words in italic with italic 
 	emphasis, using verbal stress 
 
-	example of <i> we can reer to "The <i>Queen Mary</i> sailed last night" there is
+	example of <i> we can refer to "The <i>Queen Mary</i> sailed last night" there is
 	no added emphasis or importance on the word "queen mary" another example is "The word
 	<i>the</i> is an article"
 
@@ -58,9 +58,9 @@ mark::after {
   content: " [highlight end] ";
 }
 
--<del> element show some word or phrase was deleted from doc, it has Accessibility concerns too like mark element, it has two attribute named cite and datatime
+-<del> element show some word or phrase was deleted from doc, it has Accessibility concerns like mark element, it has two attribute named cite and datatime
 
--<ins> element shwo some word or phrase was added to doc, it has Accessibility concerns too like mark element, it has two attribute named cite and datatime
+-<ins> element shwo some word or phrase was added to doc, it has Accessibility concerns like mark element, it has two attribute named cite and datatime
 
 -<sup> this element usually used for degree of numbers like '2 be tavan 2', this element should used for typography resons
 you can use vertical-align: super or give it percentage 
