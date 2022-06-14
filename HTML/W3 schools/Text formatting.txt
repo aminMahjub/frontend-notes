@@ -41,6 +41,8 @@ language, technical terms, but by definition, no longer required to use this ele
   		<em>flow</em> content.
 	</p>
 
+<i> and <b> don't have semantic meaning
+
 -<small> indicate side-comments or small print of page like copy right legal but also you can 
  use fon-size with small or smaller value
 

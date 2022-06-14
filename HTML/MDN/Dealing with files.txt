@@ -1,0 +1,12 @@
+The reasons why you must choose file's name with lowecase and no space name : 
+
+1_ many computers almost web servers are case sensitive, for exmple you called one image with
+test-site/MyImage.jpg and then in diffrenet file you invoke that image as test-site/myimage.jpg
+it may not work
+
+2_ many browsers and servers may not handle the space, for example if you put space between 
+file name some browsers treat this files as two filename, or some servers replace spaces wit '20%'
+and your links being broken 
+
+Offer : it is better use - or _ for seprating the words
+

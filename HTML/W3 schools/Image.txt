@@ -1,0 +1,53 @@
+if you wanna create clickable area in you imaeg you can use <map> element and you can 
+use <area> for marks up the area you want to be clickable
+
+you must put attribute neamed usemap in you img element for find map and area 
+
+for example : 
+
+<img src="workplace.jpg" alt="Workplace" usemap="#workmap">
+
+<map name="workmap">
+  <area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.htm">
+  <area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.htm">
+  <area shape="circle" coords="337,300,44" alt="Coffee" href="coffee.htm">
+</map>
+
+you must determined shape of you area and hten use coords for their coordinates 
+
+we have 4 shape  : 
+
+1_rect = rectabgular
+2_circle = circular
+3_poly = polygonal
+4_default 
+
+rect = you have four values as length and width of area first pair of number is first spot
+on coordinates and second pair of number is second coordinates
+ <area shape="rect" coords="34, 44, 270, 350" href="computer.htm">
+
+circle = you have 3 values the firs pair of number is about spot in coordinates and third number is
+radius
+
+<area shape="circle" coords="337, 300, 44" href="coffee.htm">
+
+poly : you can set many pair of numbre as x and y in coordinates example : 
+<area shape="poly" coords="140,121,181,116,204,160,204,222,191,270,140,329,85,355,58,352,37,322,40,259,103,161,128,147" href="croissant.htm">
+
+
+<picture> : use for show pictures with diffrente media screen 
+for defined images you should use source element and give address in srcset, media attribute that defines when the image is the most suitable.
+Always specify an <img> element as the last child element of the <picture> element. The <img> element is used by browsers that do not support the <picture> element, or if none of the <source> tags match.
+for example : 
+<picture>
+  <source media="(min-width: 650px)" srcset="img_food.jpg">
+  <source media="(min-width: 465px)" srcset="img_car.jpg">
+  <img src="img_girl.jpg">
+</picture>
+
+two reason for use picture element : 
+1_bandwith of devices 
+2_format support /l some browser don't support all formats 
+
+
+for use favicon you can use <link rel="icon" type="image/x-icon" href="/images/favicon.ico"> for sure
