@@ -1,0 +1,62 @@
+HTML tables should be used for tabular data — this is what they are designed for. 
+Unfortunately, a lot of people used to use HTML tables
+
+Layout tables reduce accessibility for visually impaired users: Screenreaders,
+used by blind people
+
+
+Tables are not automatically responsive : when you use div or header or section these width are set to
+the 1005 of their parents but tables handle size by their content width  
+
+smallest container inside tables are table cell, <td> if you want a row of 4 cells you should
+create 4 <td>
+
+to difined the row you should use <td>s inside <tr> element
+
+th come with default styling, they are bold and centered 
+
+this is very annotying if you want to style in internal th or td and it may has long time to write
+class for tr or td, So best element is <col> inside <colgroup> 
+
+Effectively we are defining two "style columns",
+ one specifying styling information for each column. We are not styling the first column, but we still have to include a blank <col> element 
+— if we didn't, the styling would just be applied to the first column.	
+
+if we want to style the two columns use span atrr set to 2 <col style="background-color: yellow" span="2">
+
+Advance Tables : 
+you can add caption with <caption> for your table and this is good for screenreaders, summary attr is good to defination too
+
+if your tavles structure will be complex it is great to use tbody, thead,tfooter for your table's section, these element don't make the table any accesiible for screenreaders or visual enhancement on their own. they are very usefull for 
+styling and layout
+
+The <thead> element must wrap the part of the table that is the header — this is usually the first row containing the column headings, but this is not necessarily always the case. If you are using <col>/<colgroup> element, the table header should come just below those.
+The <tfoot> element needs to wrap the part of the table that is the footer — this might be a final row with items in the previous rows summed, for example. You can include the table footer right at the bottom of the table as you'd expect, or just below the table header (the browser will still render it at the bottom of the table).
+The <tbody> element needs to wrap the other parts of the table content that aren't in the table header or footer. It will appear below the table header or sometimes footer, depending on how you decided to structure it.
+
+note: <tbody> is always included in every table, implicitly if you don't specify it in your code
+
+you can nested tables but it is not advice because it makes the markup more confusing and less accessible to screenreader users 
+
+scope use for tell screen readers that th is used for row or column 
+
+To add more explicit definition of the position you can add id for <th> and add headers attr for you <td> for exmaple : 
+
+  <tr>
+    <th id="purchase">Purchase</th>
+    <th id="location">Location</th>
+    <th id="date">Date</th>
+    <th id="evaluation">Evaluation</th>
+    <th id="cost">Cost (€)</th>
+  </tr>
+</thead>
+<tbody>
+<tr>
+  <th id="haircut">Haircut</th>
+  <td headers="location haircut">Hairdresser</td>
+  <td headers="date haircut">12/09</td>
+  <td headers="evaluation haircut">Great idea</td>
+  <td headers="cost haircut">30</td>
+</tr
+
+

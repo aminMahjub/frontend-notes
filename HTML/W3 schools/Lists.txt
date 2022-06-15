@@ -1,0 +1,9 @@
+Type attr : you can put type of ordered list for example it can be number or latin numberst
+or alphabet letters (it is just for ordered list)
+
+start attr : you can determined what number is start 
+
+
+Description Lists : is a list of terms with a description of each term
+the <dl> tag defined description list and <dt> defines tem(name) and <dd> denise 
+descriptopn of this terms
