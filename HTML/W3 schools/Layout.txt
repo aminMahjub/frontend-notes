@@ -1,0 +1,41 @@
+<header> - Defines a header for a document or a section
+<nav> - Defines a set of navigation links
+<section> - Defines a section in a document
+<article> - Defines an independent, self-contained content
+<aside> - Defines content aside from the content (like a sidebar)
+<footer> - Defines a footer for a document or a section
+<details> - Defines additional details that the user can open and close on demand
+<summary> - Defines a heading for the <details> element
+
+Semantic element : element with meaming 
+tells something about their contetns for example <footer>
+but <div> <span> tells nothing about their content
+
+<section>:
+Examples of where a <section> element can be used:
+
+Chapters
+Introduction
+News items
+Contact information
+
+<article> :
+Examples of where the <article> element can be used:
+
+Forum posts
+Blog posts
+User comments
+Product cards
+Newspaper articles
+
+According to the W3C: "A semantic Web allows data to be shared and reused across applications, enterprises, and communities."
+
+The <figure> tag specifies self-contained content, like illustrations, diagrams, photos, code listings, etc.
+
+The <figcaption> tag defines a caption for a <figure> element. The <figcaption> element can be placed as the first or as the last child of a <figure> element.
+
+The <img> element defines the actual image/illustration. 
+
+<time>: defines the time with datetime attr 
+for example : 
+<p>I have a date on <time datetime="2008-02-14 20:00">Valentines day</time>.</p>

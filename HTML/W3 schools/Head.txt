@@ -1,0 +1,22 @@
+<head> is about information in metadatas
+
+<title> this element just use for there three reason : 
+	defines a title in the browser toolbar
+	providesa a title for hte page when it is added to favorite
+	displays a title for the page in searhc-engine result
+
+<meta>: 
+meta element is data about page for example author or character set. page description 
+keywords 
+
+kind of <meta>
+
+1_charset = defiens the character set
+2_keywords = defines keywrods in serach-engine
+3_description = description of web page
+4_autor = author of website
+5_refresh = refresh doc in every 30 seocnds <meta http-equiv="refresh" content="30">
+6_viewport =  setting your website looking good on all devices
+
+<base> = used to set all a tags href link 
+<base href="https://www.w3schools.com/" target="_blank">

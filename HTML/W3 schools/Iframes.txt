@@ -1,0 +1,14 @@
+Iframe : used to display a web page within a web page 
+
+it is good practice to use title attr to iframe 
+
+by default iframe hase border around the page, to remove that just set border to 0
+
+you also can use target attr inside a tag to refer the iframe for example : 
+
+<iframe src="demo_iframe.htm" name="iframe_a" height="300px" width="100%" title="Iframe Example"></iframe>
+
+<p><a href="https://www.w3schools.com" target="iframe_a">W3Schools.com</a></p>
+
+Note : if your browser not support the script and script tag you can use <nonscript> tag 
+as message to user
