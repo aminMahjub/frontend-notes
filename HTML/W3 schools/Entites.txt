@@ -1,0 +1,21 @@
+html has some reserved charachter and you can use it in your text, when you want to use 
+< or > char in your text the browser might mix them with tags 
+
+syntax : 
+&entity_name
+&#entity_name
+
+advantage of using entity name is easy to remmember and disadvantage is some 
+browsers may not support all entites name
+
+Non-breaking space = the space that is not break you line into a new line and its entits
+name is &nbsp
+
+means it add space between two words for example : 10 km/h
+another reason to use non breaking space is to prevent browsers from truncatin your
+spaces if you write 10 space the browser remove 9 of them to display real space in
+youe text 
+
+Symbols : 
+symbols that are not present on your keyboard can also added by using entities
+many mathematical, technical symbols are in the html entities 

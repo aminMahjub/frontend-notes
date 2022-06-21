@@ -20,3 +20,5 @@ kind of <meta>
 
 <base> = used to set all a tags href link 
 <base href="https://www.w3schools.com/" target="_blank">
+
+complete meta tags : https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta#attr-http-equiv

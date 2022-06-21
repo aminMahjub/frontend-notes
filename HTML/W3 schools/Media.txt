@@ -1,0 +1,59 @@
+Multimedia in the web is music, video , animations
+and nowdays many browser support multimeadias element and formats 
+
+html just support mp4 and webM, Ogg formats 
+the mp4 format recommend by youtube
+
+Ogg : developed by the Xiph.org foundations
+WebM : developed by mozila goole opera adobe 
+Mp4 : developed by the Moving Picture Expert Group, commenly uses for Tv hardware and 
+vidoe camera 
+
+Mp3 and WAV and Ogg is supported by html 
+
+Mp3 : MP3 files are actually the sound part of MPEG files. MP3 is the most popular format for music players. Combines good compression (small files) with high quality. Supported by all browsers.
+If your website is about recorded music, MP3 is the choice.
+
+WAV : developed by IBM and Microsoft 
+
+
+<video> : to show video on web page 
+controls attr adds video control like pause, play
+it is good to add width and height in your video the page might flicker while the video loads.
+<source> uses for defines many types of video format for example : 
+
+<video width="320" height="240" autoplay>
+  <source src="movie.mp4" type="video/mp4">
+  <source src="movie.ogg" type="video/ogg">
+Your browser does not support the video tag.
+</video>
+
+the text between <video></video> tags displays when browsers could not support hte video element
+
+autoplay attr is used for play video automatiicly but chromuim browser do not allow 
+to playing video automaticlly
+
+add muted attr after autoplay to mute the video means video will play automaticly but muted
+note: Saffari does not support orgg format
+
+<audio> : just like <video> element
+
+
+Plug-ins : Plug-ins are computer programs that extend the standard functionality of the browser.
+
+Plug-ins were designed to be used for many different purposes:
+
+To run Java applets (Most browser no longer browsers not support)
+To run Microsoft ActiveX controls(No longer support by any browsers)
+To display Flash movies(support has been turned off in modern browsers)
+To display maps
+To scan for viruses
+To verify a bank id
+
+<object></object> : uses for embedded object within html documents designed to embed 
+plug-ins but also used for display html in html
+<object width="100%" height="500px" data="snippet.html"></object>
+
+<embed> : The <embed> element also defines an embedded object within an HTML document.
+Web browsers have supported the <embed> element for a long time. However, it has not been a part of the HTML specification before HTML5.
+this tag is deprecated tag

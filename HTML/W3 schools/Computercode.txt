@@ -1,0 +1,21 @@
+<code> : displays some text in computer code like : push() 
+note => if you want to displays multiplay line of code you can use <pre> to display it 
+cuase <code> indicate its content in one row 
+
+<kbd> : represents a span of text that is from a keyboard or voice input or any keys
+devices 
+
+notes = 
+1_to display keystrokes you can use multiplay kbd nested to eachother
+2_to displays some input that has been echoed back to use by the system you can
+nested kbd inside samp element 
+3_also if you want to show name that is in system like myComputer or File option you 
+can nest samp inside the kbd
+
+<samp> : is used to represent sample text output from computer program for example : 
+Keyboard not found
+Press F1 to continue
+
+<output> = output of input vallue
+
+<var> = represent value name in content 
