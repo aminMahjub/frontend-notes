@@ -15,7 +15,7 @@ to difined the row you should use <td>s inside <tr> element
 
 th come with default styling, they are bold and centered 
 
-this is very annotying if you want to style in internal th or td and it may has long time to write
+this is very annoying if you want to style in internal th or td and it may has long time to write
 class for tr or td, So best element is <col> inside <colgroup> 
 
 Effectively we are defining two "style columns",
@@ -27,7 +27,7 @@ if we want to style the two columns use span atrr set to 2 <col style="backgroun
 Advance Tables : 
 you can add caption with <caption> for your table and this is good for screenreaders, summary attr is good to defination too
 
-if your tavles structure will be complex it is great to use tbody, thead,tfooter for your table's section, these element don't make the table any accesiible for screenreaders or visual enhancement on their own. they are very usefull for 
+if your tables structure will be complex it is great to use tbody, thead,tfooter for your table's section, these element don't make the table any accesiible for screenreaders or visual enhancement on their own. they are very usefull for 
 styling and layout
 
 The <thead> element must wrap the part of the table that is the header — this is usually the first row containing the column headings, but this is not necessarily always the case. If you are using <col>/<colgroup> element, the table header should come just below those.

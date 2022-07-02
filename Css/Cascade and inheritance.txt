@@ -1,0 +1,32 @@
+Cacade : cascade means the order of the css rules matter, when two rules applied to same element
+and they have equal specifity, the rules that is last is applied to element 
+
+Specifity : is the algorythm browses uses for decide which property value should applied to element 
+The universal selector (*), combinators (+, >, ~, ' '), and specificity adjustment selector (:where()) have no effect on specificity.
+
+
+    Indentifiers: Score one in this column for each ID selector contained inside the overall selector.
+    Classes: Score one in this column for each class selector, attribute selector, or pseudo-class contained inside the overall selector.
+    Elements: Score one in this column for each element selector or pseudo-element contained inside the overall selector.
+
+this is very good resource for speicifity : https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Cascade_and_inheritance#specificity_2
+
+Inheritance : 
+some css property values set on parent element are inheritance by their child 
+element for instance color and font-family and some of property like border and width don't
+inherited 	
+
+inherit value: set the inherited concept manual
+
+initial value: set the defualt value from user agent 
+
+unset value: if the selected element is the inherited it act like initial means set the 
+default value for element but when the element is not inherited it like inherit means the
+value will be inherited 
+
+all property : is the property for inheritance cpncpet and it reset all the propery of 
+the element to defualt value 
+these three concept control wich rule applied to element 
+
+@layer : good video for it https://youtu.be/NDNRGW-_1EE
+ 
