@@ -1,0 +1,10 @@
+i read about the css colors a lot from freecodecamp and it is very complete and perfect
+for learned about these, there is link : https://www.freecodecamp.org/learn/2022/responsive-web-design/learn-css-colors-by-building-a-set-of-colored-markers/step-1
+
+but i want to focus on css colors so i go to the w3school and read about it there is my knowldge: 
+
+transparent : used for make color transparant it means take the parent color
+
+currentcolor: The currentcolor keyword is like a variable that holds the current value of the color property of an element.
+
+This keyword can be useful if you want a specific color to be consistent in an element or a page.
