@@ -1,0 +1,27 @@
+Combinations: 
+div p {} : selects all p elements in div
+div > p : selects all p child of div
+div + p : selects  the p immediatly after the div element
+div ~ p : select all p that is the siblings of the div element
+
+pseudo-class:
+link-visited-hover-active for a link and arrangment is important
+:first-child: select the first child of elements
+:lang
+:not
+
+pseudo-element:
+:first-line,:first-letter-::selection-,::marker:after,:before,
+
+Css diner : 
+p:first-child = select all p that is first child in page
+p:only-child = select all p that is only child in page
+p:last-child = selects all p that is last child in page does not work on the body elemnt
+p:nth-child(3) = select the third plate 
+p:nth-last-child(2) = select the last child of last
+p:first-of-type = select the first type of element
+:nth-of-type(A) = you can gave it alghortym
+:only-of-type = Select elements that are the only ones of their type within of their parent element
+:last-of-type = Select the last element of a specific type
+:empty = Selects elements that don't have any other elements inside of them.
+:not(X) = Select all elements that don't match the negation selector

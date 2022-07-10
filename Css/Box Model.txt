@@ -1,0 +1,40 @@
+block box behaivier : 
+1_ the box will break onto a new line
+2_th width and heghti are respected
+3_the margin and border and padding properties could cause other element push away from the box
+
+inline box behavier : 
+1_the box will not break onto a new line
+2_width and height will not applu 
+4_the margin and padding and border are applying and will cause other inline boxes to move away from the box.
+
+these two behavior is outer dispaly box but when you use flex and grid youur element still
+use the block value as outer display but inner display changed to flex and their children
+set as flex items
+
+box model : 
+applies to the block level element 
+Parts of a box
+Making up a block box in CSS we have the:
+
+Content box: The area where your content is displayed; size it using properties like inline-size and block-size or width and height.
+Padding box: The padding sits around the content as white space; size it using padding and related properties.
+Border box: The border box wraps the content and any padding; size it using border and related properties.
+Margin box: The margin is the outermost layer, wrapping the content, padding, and border as whitespace between this box and other elements; size it using margin and related properties.
+for instance : 
+
+.box {
+  width: 350px;
+  height: 150px;
+  margin: 10px;
+  padding: 25px;
+  border: 5px solid black;
+}
+
+in this case box model includde width and height as content box and margin is margin box and padding is padding box and border-width is border box
+
+when box-sizing: border-box you want to use alternatice space for element when you use it content space is decrease with the padding and border for example in the above example 
+
+box model in inline element a bit different, width and heigth are not apply and the margin can not push away other element in page 
+
+display: inline-block have a middle relation betwenn inline and block element it respect the width and height and do not break a new line and the margin and padding push away other element

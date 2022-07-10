@@ -1,0 +1,11 @@
+writing mode :
+A writing mode in CSS refers to whether the text is running horizontally or vertically. 
+
+horizontal-tb: Top-to-bottom block flow direction. Sentences run horizontally.
+vertical-rl: Right-to-left block flow direction. Sentences run vertically.
+vertical-lr: Left-to-right block flow direction. Sentences run verticall
+
+when you use the writing mode: vertical-lr the inline and block directions changed togheter
+it is important to use inline-size and block-size when you want to use writing mode 
+
+// logical margin //

@@ -18,15 +18,18 @@ inherited
 
 inherit value: set the inherited concept manual
 
-initial value: set the defualt value from user agent 
+initial value: set the defualt value from css definition not user agent style from browsers for exmaple for div display defualt value is block but when you set initial value, it set by inline value of display because default value of 
+display is inline
 
 unset value: if the selected element is the inherited it act like initial means set the 
 default value for element but when the element is not inherited it like inherit means the
 value will be inherited 
 
 all property : is the property for inheritance cpncpet and it reset all the propery of 
-the element to defualt value 
+the element rely on the value of this property
 these three concept control wich rule applied to element 
+
+revert: set the property to the default value by user agent style 
 
 @layer : good video for it https://youtu.be/NDNRGW-_1EE
  

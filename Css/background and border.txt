@@ -1,0 +1,42 @@
+background-attachtment : 
+the background image should scroll or be fixed 
+when it is fixed it not scrolled when page is scrolling 
+and when it is scrill the image wil be scroll when page is scrolled
+
+shorthand : background: color image repeat attachment positon
+
+note: you can add multiplay image to a page and seperate it when you use it as value for 
+example : 
+#example1 {
+  background-image: url(img_flwr.gif), url(paper.gif);
+  background-position: right bottom, left top;
+  background-repeat: no-repeat, repeat;
+}
+
+shorthand is : 
+#example1 {
+  background: url(img_flwr.gif) right bottom no-repeat, url(paper.gif) left top repeat;
+}
+
+background size: The CSS background-size property allows you to specify the size of background images
+important value : 
+contain => The contain keyword scales the background image to be as large as possible (but both its width and its height must fit inside the content area). As such, depending on the proportions of the background image and the background positioning area, there may be some areas of the background which are not covered by the background image.
+cover => The cover keyword scales the background image so that the content area is completely covered by the background image (both its width and height are equal to or exceed the content area). As such, some parts of the background image may not be visible in the background positioning area.
+
+background-origin: The CSS background-origin property specifies where the background image is positioned.
+
+The property takes three different values:
+
+border-box - the background image starts from the upper left corner of the border
+padding-box - (default) the background image starts from the upper left corner of the padding edge
+content-box - the background image starts from the upper left corner of the content
+
+background-clip : 
+
+The CSS background-clip property specifies the painting area of the background.
+
+The property takes three different values:
+
+border-box - (default) the background is painted to the outside edge of the border
+padding-box - the background is painted to the outside edge of the padding
+content-box - the background is painted within the content box 
