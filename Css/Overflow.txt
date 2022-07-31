@@ -1,0 +1,13 @@
+Overflow : what happaend when there is too much content to fit in a container and why 
+not css hide overflowing content? becuase it could be a data loss in the page and may 
+the programmer doesn't find the problem of content beacuase content is hiding behind 
+the container, So it is good for debugging 
+
+for crop the content when it is bigger than container you should give the container 
+ovreflow: hidden also you like to add scroll you can added in this way => overflwo 
+scroll and if the content is not bigger than container the scrollbar are even show in 
+the page you can give the overflow-y or overflow-x for x and y axis
+
+overflow shourthand: overflow: overflow-x a, overflow-y
+
+If you only want scrollbars to appear when there is more content than can fit in the box, use overflow: auto. This allows the browser to determine if it should display scrollbars.

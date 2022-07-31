@@ -1,0 +1,7 @@
+if you use the image without any width and height, it has a inherited size in its information
+file 
+
+When you use margin and padding set in percentages, the value is calculated from the inline size of the containing block 
+— therefore the width when working in a horizontal language. In our example, all of the margins and padding are 10% of the width.
+ This means you can have equal-sized margins and padding all around the box.
+ This is a fact worth remembering if you do use percentages in this way.

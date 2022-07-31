@@ -1,0 +1,30 @@
+-the team and your companies which you worked there have style giude you must to win 
+over your own personal performance 
+
+-don't put every property into a single line 
+
+-always write the perfect comment for your project it is good for you and other developers 
+when they are come back to the project 
+ when you are commenting everything in css, you are self-explanatory
+/* || UTILITIES */ = defines the section in css comment
+
+- don't overly-specifc selectors 
+
+- css methodologies : 
+
+1_oocss: abbreviation of object orianted css, the basic idea of the oocss is the seperate
+your css into the reusable object which can be used anywhere
+for example you set the default grid property baesed on your site in the class and then give 
+it when need it 
+
+2_BEM : abbreviation of Block Element Modifier and like the oocss metho but you seperate 
+the class name with dashes for examole button--state-succes 
+
+3_preproccesors : A pre-processor runs over your raw files and turns them into a stylesheet, 
+whereas a post-processor takes your finished stylesheet and does something to it
+
+pre-proccesor in css is less and sacc and used for plain the function,variables and loops for 
+browsers to read
+
+post-preproccesor take the plain css and applies automation to it
+postCss is the post-preprocessor and it have debuger 

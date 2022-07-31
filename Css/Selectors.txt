@@ -13,6 +13,9 @@ link-visited-hover-active for a link and arrangment is important
 pseudo-element:
 :first-line,:first-letter-::selection-,::marker:after,:before,
 
+pseudo-selector: 
+:not()
+
 Css diner : 
 p:first-child = select all p that is first child in page
 p:only-child = select all p that is only child in page

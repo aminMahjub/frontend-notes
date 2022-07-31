@@ -1,0 +1,5 @@
+role: describe the role of the elemenet and technology such as screen readers can use it
+
+<a href="#" role="button">Button Link</a>
+
+for example screen reader read this button instead of link

@@ -1,0 +1,29 @@
+the text start in the top left or top right in rtl language and end in the end of the
+line
+
+styling the fort of the text : 
+
+-text-decoration : text-decoration shorthand is line/color/style/thickness
+
+	you can use text-decoration-line for underline or none, overline,line-through the element or you can used togheter like text-decoration-line: undreline overline;
+
+	text-decoration-style for styling the text decoration with double dotted dahsed wavy 
+
+	text-decoration-color: defines the color of the decoration 
+
+	text-decoration-thickness : used for width of the decoration 
+
+	<s> : for represent the something is not accurated or no longer relvente and renders the text with strikethrough
+
+-font-style: used to turn the italic font off or on 
+	italic: used the defualt italic of the font applied on the project , if it is not exist it wil simulate iatlic with oblique instead 
+	oblique:Sets the text to use a simulated version of an italic font, created by slanting the normal version.
+
+	difference : According to the spec, “Italic forms are generally cursive in nature while oblique faces are typically sloped versions of the regular face.”
+	However, if the font being used does not have italic or oblique faces available, in most cases there is little, if any,
+	difference between italic and oblique.
+
+-text-shadow : horizontal offset vertical offset blur radius  base color
+	you can add multiple text shadow and seperate it with comma 
+
+-text-align: justify => The inline contents are justified. Text should be spaced to line up its left and right edges to the left and right edges of the line box, except for the last line.d

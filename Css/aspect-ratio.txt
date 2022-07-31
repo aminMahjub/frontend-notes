@@ -1,0 +1,9 @@
+The aspect-ratio CSS property sets a preferred aspect ratio for the box,
+ which will be used in the calculation of auto sizes and some other layout functions.
+
+The box's preferred aspect ratio is the specified ratio of width / height.
+ If height and the preceding slash character are omitted, 
+height defaults to 1. Size calculations involving preferred aspect ratio work with the dimensions of the box specified by box-sizing.
+
+If both auto and a <ratio> are specified together, the preferred aspect ratio is the specified ratio of width divided by height, 
+unless it is a replaced element with an intrinsic aspect ratio, in which case that aspect ratio is used instead.

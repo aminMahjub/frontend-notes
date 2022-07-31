@@ -1,0 +1,5 @@
+-border-collapse: you can use to tell the table your borders will ne seperate or collaspe
+
+-tabble-layout: The table-layout CSS property sets the algorithm used to lay out <table> cells, rows, and columns.
+fixed value => Table and column widths are set by the widths of table and col elements or by the width of the first row of cells.
+ Cells in subsequent rows do not affect column widths.

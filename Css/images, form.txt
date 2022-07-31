@@ -1,0 +1,18 @@
+-everything in css generate the css box If you place an image inside a box that is smaller or larger than the intrinsic dimensions of the image file in either direction, it will either appear smaller than the box, or overflow the box
+
+-if you use the max-width of 100% your image will not be larger than its contaier
+
+- you can use object-fit to cover or contain the image of the box 
+
+-In some browsers, form elements do not inherit font styling by default. Therefore, if you want to be sure that your form fields use the font defined on the body,
+ or on a parent element, you should add this rule to your CSS :
+
+button,
+input,
+select,
+textarea {
+  font-family : inherit;
+  font-size : 100%;
+}
+
+as reset 
