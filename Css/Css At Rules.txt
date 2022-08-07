@@ -1,0 +1,25 @@
+Css at-rules are css statement instruct the css how to behave.
+
+syntax :
+/* General structure */
+@IDENTIFIER (RULE);
+
+/* Example: tells browser to use UTF-8 character set */
+@charset "utf-8";
+
+
+@charset => exact like the html meta you can define the charset in css like above
+@import => you can import the style rule from another stylesheet
+// ask someone to explain it 
+
+@namespace => @namespace is an at-rule that defines XML namespaces to be used in a CSS style sheet.
+
+@supports =>  CSS at-rule lets you specify declarations that depend on a browser's support for one or more
+ specific CSS features. This is called a feature query.
+ The rule may be placed at the top level of your code or nested inside any other conditional group at-rule.
+
+@property => The @property CSS at-rule is part of the CSS Houdini umbrella of APIs, it allows developers to explicitly define their css custom properties,
+ allowing for property type checking, setting default values, and define whether a property can inherit values or not.
+
+
+@layer => 

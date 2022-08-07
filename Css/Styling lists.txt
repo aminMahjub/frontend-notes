@@ -1,0 +1,46 @@
+deufalt style for ol and ul element is margin of 16px and pading-left 40px 
+<dl> element has top and bottom margin but no padding 
+<dd> element has margin-left of 40 px 
+
+list-style: 1-type => set the type of the bullet
+			for example: upper-roman
+			tip=> when you set the value none of the type it not count in screen redears
+				if you wanna fix this you should use ::before and gave it content of /200B
+
+				ul li::before {
+  					content: "\200B";
+				}
+
+		2_position => set the postion of bullet it is inside or outisde, the defualt value is outside
+		3_image => allows you to use the custm image
+
+shorthand is list-style: type image position 
+
+in ordered list you can use start attr to set the number of count start for example when you set it to 4 it will start from 4 and increase
+and if you wanna reversed that you can use reversed attr to reverse the number counting
+you can use value attr in li element to set the value of the list items
+
+
+@counter-style at-rules => 
+it used to define the custom counting style for list items in ul or ol.
+
+for example :
+@counter-style thumbs {
+  system: cyclic;
+  symbols: "\1F44D";
+  suffix: " ";
+}
+
+ul {
+  list-style: thumbs;
+}
+
+system => you can define the system of the counting style : 
+cyclic: nce the end of the list of symbols is reached, it will loop back to the beginning and start over,At least one symbol must be specified in the symbols descriptor or the counter style is not valid
+fixed: Once the system has looped through all the specified symbols, it will fall back, At least one symbol must be specified in the symbols descriptor or the counter style is not valid
+symbolatic: defines the symbol 
+numeric
+alephatic 
+
+symbols => use the symbols of the counter
+seffix and prefix use for suffix and prefix of list item
