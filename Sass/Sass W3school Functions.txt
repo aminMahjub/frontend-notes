@@ -1,0 +1,15 @@
+String Functions: 
+-Sass strings are 1-based. The first character in a string is at index 1, not 0.
+quote(string):
+	
+Adds quotes to string, and returns the result.
+Example:
+quote(Hello world!)
+Result: "Hello world!"
+
+str-index(string, substring):
+
+Returns the index of the first occurrence of the substring within string.
+Example:
+str-index("Hello world!", "H")
+Result: 1

@@ -1,0 +1,128 @@
+Sass descriptopn:
+
+-Sass extand for syntacticallly awsome stylesheet
+-Sass is a css preprocessor
+-Sass was designed by hmpton catlin and developed by natalie wezenbaum in 2006
+-Sass lets you use features that do not exist in css like variables, mixin,...
+-You should convert your sass code to css by transpiler, and this process called transpiling
+-Sass based on ruby
+
+Sass Variables:
+-whit sass you can stored any information like boolean,nulls, lists,colors,... 
+-for define the varialbes use $ sign for example: $darkColor: dark;
+-so when sass transplied to css, it takes variables and output nnormal css value instead
+-sass variables are only available at the level of nesting where they are define!!
+-defualt behavior for varialbes scope can be ovveridden by using the !global swaitch
+-!global say to app this variable is accessible on all levels
+Note: global varrialbe must defined outside of any rules. It could be wise to define all global varriables
+in its file, _globals.scss
+
+Sass Nesting:
+-sass lets you define css selector same as html
+-many css properties have same prefix like font-size,font-family or text-aling, text-orient 
+with sass you can use them as nested properties : 
+
+font: {
+  family: Helvetica, sans-serif;
+  size: 18px;
+  weight: bold;
+}
+
+text: {
+  align: center;
+  transform: lowercase;
+  overflow: hidden;
+}
+
+Sass @import: 
+-sass keeps the css code DRY, one way to write dry code is seperate files
+-import directive allow you to include the content of one file in another
+-The CSS @import directive has a major drawback due to performance issues;
+ it creates an extra HTTP request each time you call it. However, the Sass @import directive includes the file in the CSS;
+ so no extra HTTP call is required at runtime!
+-by defualt sass transpiles all the .scss files directly. However, when you want to import a file,
+you do not need files to be transpiled directly. Sass has machinism for this, if you wanna
+to not transplied your sass, just start file name with underscore like: _filename;
+this files called partials 
+
+Sass @mixin: 
+-@mixin code lets you create css code that is to be reused throughout the website
+-@include create to let you use (inclue) the mixin
+-syntax : 
+@mixin name {
+  property: value;
+  property: value;
+  ...
+}
+
+for example: 
+@mixin important-text {
+  color: red;
+  font-size: 25px;
+  font-weight: bold;
+  border: 1px solid blue;
+}
+
+-@include let you to use mixin in rules syntax: 
+selector {
+  @include mixin-name;
+}
+
+for example:
+.danger {
+  @include important-text;
+  background-color: green;
+}
+
+-the mixin can also include other mixins like :
+@mixin special-text {
+  @include important-text;
+  @include link;
+  @include special-border;
+}
+-mixin accept arguemnt and we can pass information to a mixin like:
+@mixin bordered($color, $width) {
+  border: $width solid $color;
+}
+
+.myArticle {
+  @include bordered(blue, 1px);  // Call mixin with two values
+}
+
+.myNotes {
+  @include bordered(red, 2px); // Call mixin with two values
+}
+
+-important way to use mixin is vendor prefixes for example:
+@mixin transform($property) {
+  -webkit-transform: $property;
+  -ms-transform: $property;
+  transform: $property;
+}
+
+.myBox {
+  @include transform(rotate(20deg));
+}
+
+Sass @extend:
+-The @extend directive helps keep your Sass code very DRY.
+for example :
+.button-basic, .button-report, .button-submit {
+  border: none;
+  padding: 15px 30px;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.button-report  {
+  background-color: red;
+}
+
+.button-submit  {
+  background-color: green;
+  color: white;
+}
+
+-By using the @extend directive, you do not need to specify several classes for an element in your HTML code,
+ like this: <button class="button-basic button-report">Report this</button>. You just need to specify .button-report to get both sets of styles.
