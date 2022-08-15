@@ -1,0 +1,24 @@
+We have two kind of sass syntax : 
+1_SCSS format: it support all sass features and css sassy css
+2_original sass format: it support all features of sass but when you write code you do
+not write curly braces and semicalons
+
+when you use css variables browser complie it to variable and then use it but when you
+use sass variables browser just use the value of the variable and it has 100% compatibility
+
+
+you can use map in sass like object in js for example you define a bunch of variables for 
+font-weight: 
+
+$font-weight (
+	"regular": 400,
+	"bold": 700
+)
+
+
+body {
+	font-weight: map-get($font-weight, bold)
+}
+
+
+& equals to parent in sass
