@@ -1,0 +1,14 @@
+Colors Functions:
+with fade-out function you can decrease the opacity of the color for example:
+
+$lagoon-blue: fade-out(#62fdca, 0.5);
+now you deacrese the opacity of the color 0.5
+
+with face-in function you increase the opacity
+
+you can use plus operator for calculate the hex color for example:
+$color: #010203 + #040506;
+
+01 + 04 = 05
+02 + 05 = 07
+03 + 06 = 09
