@@ -1,0 +1,66 @@
+New operator and constructor functions : 
+Sometimes we need to create many similar objects with different value, So we cannot declare many objects in our code So we can use constructor function and new operator to do this easily
+
+constructor function : 
+This is regular function that we use this as constructor and syntax likes this :
+
+function User(name) {
+  this.name = name;
+  this.isAdmin = false;
+}
+
+Notice that they named with capital letter first
+and they should be executed with new operator 
+
+And here is when new operator comes!!
+
+let jack = new User('jack');
+
+it creates literals object but the difference is that is more readable and flexible.  when you use new it likes to created literal object :
+let jack = {
+ name: 'jack',
+ isAdmin: false
+}
+
+new operator :
+when you use new operator you passed these steps in the code :
+1- you create new object and named 'this'.
+2- then you add properties (read function body);
+3 - the 'this' returned
+
+function User(name) {
+  // this = {};  (implicitly)
+
+  // add properties to this
+  this.name = name;
+  this.isAdmin = false;
+
+  // return this;  (implicitly)
+}
+
+Advance constructor functions : 
+if you wanna know when we use new in function you can use new.target expression it returns undefined when we do not use new operator, so this is good things used to omit the new operator when we want to declare new constructor for example :
+function User(name) {
+  if (!new.target) { // if you run me without new
+    return new User(name); // ...I will add new for you
+  }
+
+  this.name = name;
+}
+
+let john = User("John"); // redirects call to new User
+alert(john.name); // John
+
+but this is not perfect when we use this everywhere in our code because we will confused what's going on here later!
+
+Return in constructor functions :
+Constructor functions always return this and if you return another object it return that object and if you wanna return primitive values it ignored, so on other hand constructor functions can only return objects and it could be this or another object
+
+function BigUser() {
+
+  this.name = "John";
+
+  return { name: "Godzilla" };  // <-- returns this object
+}
+
+alert( new BigUser().name );  // Godzilla, got that object

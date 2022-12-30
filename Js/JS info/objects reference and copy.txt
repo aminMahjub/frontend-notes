@@ -1,0 +1,37 @@
+Object references and copying ~
+the difference between primitive and objects variables is when you want to copy the value in primitives you just copy the value from other variables and stored in new variables.
+e.g => let admin = 'Amin';
+            let user = admin;
+it likes to create place in the memory and put the 'Amin' into the user place but in the objects does not like that, if you do this in objects it just copies the reference of objects. in the memory objects variables stored as reference it means you have place in memory and stored objects reference and now if you wanna to click that reference you see the actual value of objects.
+so when you assign the new variable to objects it just copies the reference and whenever you make change in one of the objects the other objects will change. e.g => 
+let user = { name: 'John' };
+let admin = user;
+
+admin.name = 'Pete'; // changed by the "admin" reference
+
+alert(user.name); // 'Pete', changes are seen from the "user" reference
+
+Cloning, merging ~
+you can merging objects by looping throught them like 
+let user = {
+  name: "John",
+  age: 30
+};
+
+let clone = {}; // the new empty object
+
+// let's copy all user properties into it
+for (let key in user) {
+  clone[key] = user[key];
+}
+
+or you can do this with assign method, Object.assign method get the target object and copy into the object without changing first object
+let user = { name: "John" };
+
+let permissions1 = { canView: true };
+let permissions2 = { canEdit: true };
+
+// copies all properties from permissions1 and permissions2 into user
+Object.assign(user, permissions1, permissions2);
+
+so if you have nested objects or arrays if you use Object.assign you get the same objects reference, to fix that issue you can use structureCode(obj) method. notice you cannot clone the objects with method you get the error, if you wanna do this you should use lodash library.

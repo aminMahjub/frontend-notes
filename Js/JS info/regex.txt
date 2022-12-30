@@ -1,0 +1,47 @@
+Regular expression:
+used for match part of string, you could create pattern with that matching. e.g => you want to find word 'the' in 'The dog chased the cat' you can use /the/ 
+
+.test() method :
+ one way to test and match given parameter for string, it returns boolean. e.g => 
+ let string = 'freeCodeCamp';
+ let regex = /Code/;
+ regex.test(string); // it returns true
+tip => any other form of 'code' does not match and returns false. e.g = /code/ or /CODE/
+
+OR operator : 
+ you can use or operator for regex to search given word and if one of exist it returns true. e.g => you look for dog or cat or fog in the text or  texts you can simply test /dog|fog|cat/ regex
+
+.match() method:
+ this method gives the string you want to search in strings and you can know the index of start. e.g => 
+ 'string the string'.match(/string/); //output: [ 'string', index: 0, input: 'string the string', groups: undefined ]
+
+/g and /i :
+ /g used for search the all specific regex on the string means if you have three hello in your string it matches all three hello and /i removes the  lower and upper case in string. e.g => 
+ let twinkleStar = "Twinkle, twinkle, little star";
+ let starRegex = /twinkle/gi; // Change this line
+ let result = twinkleStar.match(starRegex); // output: [ 'Twinkle', 'twinkle' ];
+
+wildcard period :
+it match all the given character in the string. e.g => run, sun, pun, nun = /.un/ | hug, huh, hut, hum = /hu./
+
+character classes :
+ used for determine specific character in the searching word between curly braces [ ]. e.g => you want to find bug, big, bag but do not want  bog your regex is /b[aiu]g/;
+
+match the alphabet :
+ you can use '-' in character or numbers classes for find the limited alphabet character. e.g => /[a - c]at/ it return true for cat, hat, sat, tat or 
+[a-z0-9]
+
+negated character : 
+ that characters you do not want to match and you determine them with ^. e.g => [^auioe]/gi that returns all character that does not have vowel character
+
++ character :
+Sometimes, you need to match a character (or group of characters) that appears one or more times in a row. This means it occurs at least once, and may be repeated.
+
+tip => If it were instead checking the string abab, it would find two matches and return ["a", "a"] because the a characters are not in a row - there is a b between them. Finally, since there is no a in the string bcd, it wouldn't find a match.
+
+use $ to search the character at the end of string. e.g => /story$/ in 'This is a fine story' = true
+
+
+
+
+
